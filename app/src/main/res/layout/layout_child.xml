@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_full_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_device_type"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/ic_device"
+                        android:padding="12dp"
+                        android:background="@drawable/shape_circle"
+                        android:tint="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_station_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This is Station ID"
+                        android:textSize="15sp"
+                        android:textColor="#009688"
+                        android:textStyle="bold"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/tv_custom_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This is Custom Name"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBlack"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_device_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This is device type"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBlack"
+                        android:padding="5dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_down"
+                        android:tint="#009688"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_bottom_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardBackgroundColor="#1B95C34A">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_last_communication"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Last communication"
+                                android:textSize="14sp"
+                                android:textColor="#009688"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+
+                            <TextView
+                                android:id="@+id/tv_last_communication"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="This is Station ID"
+                                android:textSize="15sp"
+                                android:textColor="#009688"
+                                android:textStyle="bold"
+                                android:padding="5dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_network"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Network signal quality"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_network_signal_quality"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="This is Custom Name"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_battery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Battery"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_battery"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="This is Custom Name"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_temperature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Air temperature"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_air_temperature"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="This is Custom Name"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_humidity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Relative humidity"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_relative_humidity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="This is Custom"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_rain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Rain in last 24h"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_rain"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="This is Custom Name"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorBlack"
+                                android:padding="5dp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBlack"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
