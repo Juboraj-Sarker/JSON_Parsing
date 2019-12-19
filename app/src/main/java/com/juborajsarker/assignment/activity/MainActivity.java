@@ -133,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Toast.makeText(MainActivity.this, "" + response.message(), Toast.LENGTH_SHORT).show();
+                    dialog.dismissDialog();
                 }
             }
 
@@ -140,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<List<MainStation>> call, Throwable t) {
 
                 Toast.makeText(MainActivity.this, "Error Found " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                dialog.dismissDialog();
 
             }
         });
